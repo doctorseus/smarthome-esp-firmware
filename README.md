@@ -24,3 +24,15 @@ The following documents the required hardware changes:
 
 ### Configuration
 See [config.h](EspMQTT_SingleRelay/config.h).
+
+### Test
+```
+#define APP_ENABLE_TRIGGER
+#define APP_TRIGGER_TIME 2000
+mosquitto_pub -h localhost -p 1883 -t "espmqtt/client_4c11ae0e3acb/action" -m "trigger"
+
+#define APP_ENABLE_ONOFF
+mosquitto_pub -h localhost -p 1883 -t "espmqtt/client_4c11ae0e3acb/action" -m "on"
+mosquitto_pub -h localhost -p 1883 -t "espmqtt/client_4c11ae0e3acb/action" -m "off"
+```
+

@@ -1,3 +1,7 @@
+## Dependencies
+Ardunio Libraries:
+ * PubSubClient (2.7.0) - https://github.com/knolleary/pubsubclient
+
 ## EspMQTT_SingleRelay
 ### Hardware
 Buy on AliExpress: https://www.aliexpress.com/item/32969807508.html  
